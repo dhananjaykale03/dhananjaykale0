@@ -1,0 +1,83 @@
+.background {
+    position: fixed;
+    inset: 0;
+    z-index: -2;
+
+    background: radial-gradient(
+            circle at center,
+            #0f3d5e 0%,
+            #051527 40%,
+            #020817 100%
+    );
+}
+
+.background::before {
+    content: "";
+    position: absolute;
+
+    width: 900px;
+    height: 900px;
+
+    left: 50%;
+    top: 40%;
+
+    transform: translate(-50%, -50%);
+
+    background: radial-gradient(
+            circle,
+            rgba(59, 130, 246, 0.45),
+            transparent 70%
+    );
+
+    filter: blur(120px);
+
+    animation: glowMove 8s ease-in-out infinite;
+}
+
+.stars {
+    position: fixed;
+    inset: 0;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.star {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background: white;
+    border-radius: 50%;
+
+    animation: twinkle 3s infinite ease-in-out;
+}
+
+@keyframes twinkle {
+    0% {
+        opacity: 0.2;
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(2);
+    }
+
+    100% {
+        opacity: 0.2;
+        transform: scale(1);
+    }
+}
+
+@keyframes glowMove {
+    0% {
+        transform: translate(-50%, -50%);
+    }
+
+    50% {
+        transform: translate(-50%, -45%);
+    }
+
+    100% {
+        transform: translate(-50%, -50%);
+    }
+}
