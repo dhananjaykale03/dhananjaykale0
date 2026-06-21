@@ -20,7 +20,7 @@ const About = () => {
                     </p>
 
                     <p className="text-lg text-text-secondary leading-relaxed">
-                        I specialize in frontend development with expertise in React, TypeScript, and modern web technologies. I 💗 turning complex problems into simple, beautiful, and intuitive solutions that users enjoy interacting with.
+                       I specialize in Java development with expertise in Core Java, OOP, Collections Framework, SQL, and modern web technologies. I 💗 turning complex problems into simple, beautiful, and intuitive solutions that users enjoy interacting with.
                     </p>
                 </div>
             </div>
